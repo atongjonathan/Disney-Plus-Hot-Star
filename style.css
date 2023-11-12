@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', 'sans-serif';
+}
+.body
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.main
+{
+    width: 95%;
+    /* background-color: gray; */
+    display: flex;
+    position: relative;
+}
+.navigation
+{
+    height: 100vh;
+    width: 5%;
+    background-color: #0f1014;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+}
+.logo
+{
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-img
+{
+    width: 50px;
+}
+.nav
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 13px;
+}
+.nav-link
+{
+    list-style-type: none;
+    color: white;
+    opacity: .7;
+    font-size: 18px;
+    padding: 8px;
+    transition: .2s;
+}
+.nav-link:hover
+{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.nav-1-img
+{
+    width: 25px;
+}
+.home
+{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    height: 80vh;
+}
+.banner
+{
+    width: 100%;
+    /* background-color: red; */
+    height: 90vh;
+    position: fixed;
+    /* background-color: red; */
+}
+.title
+{
+    text-indent: 20px;
+}
+.banner-div
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-description
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* position: absolute; */
+    /* top:0; */
+}
+
+.banner-img-div
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+
+}
+.banner-img
+{
+    height: 110%;
+
+}
+.overlay-1
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background: linear-gradient(to right,#16181fed 15%, transparent, transparent );
+}
+.overlay-2
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    /* background: linear-gradient(to top,#16181fed 10%, transparent, transparent );   */
+}
+
+
+.banner-info
+{
+    width: 30%;
+    height: 100%;
+    /* background-color: green; */
+    /* position: absolute; */
+    /* top: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    z-index: 1;
+    row-gap: 25px;
+    margin: 0 15px;
+    padding: 0 8px;
+}
+.banner-more-info
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.dot
+{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    display: block;
+}
+.buttons
+{
+    width: 100%;
+    height: 80px;
+    /* background-color: blue; */
+    display: flex;
+    column-gap: 15px;
+}
+.big-button
+{
+    width: 80%;
+    height: 100%;
+}
+.small-button
+{
+    width: 20%;
+    height: 100%;
+}
+.watch-btn
+{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0,0%,100%,.08);
+    color: white;
+    border: none;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+
+}
+.plus-btn
+{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0,0%,100%,.08);
+    color: white;
+    border: none;
+    font-size: medium;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus-btn:hover, .watch-btn:hover
+{
+    transform: scale(1.01);
+    background-color: hsla(0,0%,100%,.3);
+
+}
+
+.content
+{
+    width: 100%;
+    /* margin-top: 90vh; */
+    height: 200vh;
+    background-color: #0f1014;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 85vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.section-latest, .section-top-10
+{    margin-left: 3px;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+.latest, .top-10
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 15px 23px;
+    /* background-color: purple; */
+}
+.va
+{
+    opacity: .7;
+    font-size: 15px;
+    transition: .2s;
+    cursor: pointer;
+}
+.va:hover
+{
+    opacity: 1;
+}
+.movies
+{
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    /* display: flex; */
+    /* background-color: red; */
+}
+.movement
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+
+}
+.button-next
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: yellow; */
+    width: 4%;
+    margin-left: 20px;
+    background: linear-gradient(269.25deg,#0f1014 0.62%,rgba(15,16,20,0) 99.33%);
+    z-index: 4;
+    /* height: 270px; */
+
+
+}
+.button-back
+{
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: yellow; */
+    width: 2%;
+    align-self: flex-end;
+    background: linear-gradient(88deg,#0f1014 0.62%,rgba(15,16,20,0) 99.33%);
+    /* margin-left: 20px; */
+}
+.slider
+{
+    margin-left: 0;
+    width: 150%;
+    /* background-color: purple; */
+    display: flex;
+    column-gap: 10px;
+    transition: .7s;
+}
+.movie
+{
+    width: 8.8%;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+.movie-img
+{
+    border-radius: 10px;
+    height: 230.703px;
+    width: 100%;
+
+}
+.movie-div
+{
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: purple; */
+
+}
+.number
+{
+    font-size: 110px;
+    color: #f7f1f1;
+    margin: 9px 0;
+    align-self: flex-end;
+    opacity: .9;
+    /* background-color: #757ea1; */
+    /* opacity: .5; */
+}
