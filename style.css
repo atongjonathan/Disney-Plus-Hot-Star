@@ -244,7 +244,7 @@
 {
     width: 100%;
     /* margin-top: 90vh; */
-    height: 200vh;
+    /* height: 200vh; */
     background-color: #0f1014;
     position: absolute;
     margin-left: 5%;
@@ -340,18 +340,21 @@
     display: flex;
     column-gap: 10px;
     transition: .7s;
+
 }
 .movie
 {
     width: 8.8%;
     position: relative;
-    margin: 10px;
+    margin: 3px;
     overflow: hidden;
+    /* background-color: red; */
 }
 .movie-img
 {
     border-radius: 10px;
-    height: 230.703px;
+    /* height: 230.703px; */
+    height: 100%;
     width: 100%;
 
 }
@@ -376,4 +379,97 @@
     opacity: .9;
     /* background-color: #757ea1; */
     /* opacity: .5; */
+}
+.section-brands
+{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+.brand-div
+{
+    width: 16%;
+    background-color: blue;
+    height: 150px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.brand
+{
+    /* height: 100%; */
+    width: 100%;
+}
+.sport
+{
+    /* width: 100%; */
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+    margin-left: 5px;
+
+}
+
+.sports-slider
+{
+    /* height: 100%; */
+    width: 150%;
+    margin-left: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    transition: .7s;
+}
+.sports
+{
+    background-color: #0f1014;
+    position: relative;
+}
+.sport-img-div
+{
+    position: relative;
+    /* height: 100%; */
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sport-img
+{
+    width: 95%;
+    border-radius: 10px;
+    height: 95%;
+    cursor: pointer;
+
+}
+.sport-title
+{
+    color: white;
+    margin: 5px;
+}
+.sport-description
+{
+ /* margin-top: 5px; */
+ font-size: 12px;
+ opacity: 0;
+ transition: .3s;
+}
+.sports-play
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 5px;
+    left: 15px;
+}
+.sport:hover
+{
+    transform: scale(1.05);
+}
+.sport:hover .sport-description
+{
+    opacity: .7;
 }

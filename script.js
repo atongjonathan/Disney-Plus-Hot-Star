@@ -22,17 +22,21 @@ function move_slider_left(elementId)
         slider.style.marginLeft = `0px`;
     }
 };
+let sliders = ["top_10", "latest", "popular", "sports","superhero", "binge"]
+for(let i=0; i<sliders.length; i++)
+{
+    let next_button = `${sliders[i]}-next`;
+    let back_button = `${sliders[i]}-back`;
+    
+    document.getElementById(next_button).addEventListener("click", function()
+    {
+        move_slider_right(this.id);
+    })
+    document.getElementById(back_button).addEventListener("click", function()
+    {
+        move_slider_left(this.id);
+    })
+};
 
-// Example usage with an event listener
-document.getElementById("top_10-next").addEventListener('click', function() {
-    move_slider_right(this.id);
-});
-document.getElementById("latest-next").addEventListener('click', function() {
-    move_slider_right(this.id);
-});
-document.getElementById("top_10-back").addEventListener('click', function() {
-    move_slider_left(this.id);
-});
-document.getElementById("latest-back").addEventListener('click', function() {
-    move_slider_left(this.id);
-});
+
+
