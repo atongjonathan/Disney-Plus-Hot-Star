@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function (){
         let slider_width = targetSlider.offsetWidth;
     
         if (direction === "back" && slider_width > 1231) {
-            targetSlider.style.marginLeft = `0px`;
+            targetSlider.style.marginLeft = `15px`;
         } else if (slider_width > 1231) {
             let excess = slider_width - 1300;
             targetSlider.style.marginLeft = `-${excess}px`;
