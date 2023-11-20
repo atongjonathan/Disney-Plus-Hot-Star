@@ -1,37 +1,32 @@
-document.addEventListener("DOMContentLoaded", function (){              
-    document.querySelectorAll(".button-back").forEach(function(button)
-    {
-        button.onclick = function(){
-            button_slider = button.dataset.slider
-            document.querySelectorAll('.slider').forEach(function(slider){
-                if (slider.id === button_slider){
-                    let slider_width = slider.offsetWidth;
-                    if (slider_width > 1231) {
-                            slider.style.marginLeft = `0px`;
-                        }
-                }
-            });
-            
-        };
-        
+document.addEventListener("DOMContentLoaded", function (){   
+    function handleButtonClick(button, direction) {
+    button.onclick = function () {
+        let button_slider = button.dataset.slider;
+        let targetSlider = document.querySelector(`.slider#${button_slider}`);
+    
+        if (targetSlider) {
+        let slider_width = targetSlider.offsetWidth;
+    
+        if (direction === "back" && slider_width > 1231) {
+            targetSlider.style.marginLeft = `0px`;
+        } else if (slider_width > 1231) {
+            let excess = slider_width - 1300;
+            targetSlider.style.marginLeft = `-${excess}px`;
+        }
+    
+        console.log(direction);
+        }
+    };
+    }
+    
+    document.querySelectorAll(".button-back").forEach(function (button) {
+    handleButtonClick(button, "back");
     });
-    document.querySelectorAll(".button-next").forEach(function(button)
-        {
-            button.onclick = function(){
-                button_slider = button.dataset.slider
-                document.querySelectorAll('.slider').forEach(function(slider){
-                    if (slider.id === button_slider){
-                        let slider_width = slider.offsetWidth;
-                        if (slider_width > 1231) {
-                                let excess = slider_width - 1231;
-                                slider.style.marginLeft = `-${excess}px`;
-                            }
-                    }
-                });
-                
-            };
-            
-        });
+    
+    document.querySelectorAll(".button-next").forEach(function (button) {
+    handleButtonClick(button, "next");
+    });
+      
 });
 
 
