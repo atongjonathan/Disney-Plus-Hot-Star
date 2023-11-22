@@ -186,7 +186,7 @@
 }
 .buttons
 {
-    width: 100%;
+    /* width: 100%; */
     height: 80px;
     /* background-color: blue; */
     display: flex;
@@ -195,12 +195,10 @@
 .big-button
 {
     width: 80%;
-    height: 100%;
 }
 .small-button
 {
     width: 20%;
-    height: 100%;
 }
 .watch-btn
 {
@@ -283,19 +281,8 @@
 {
     opacity: 1;
 }
-.movies
-{
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    padding-top: 10px;    
-    /* display: flex; */
-    /* background-color: red; */
-}
-.movie:hover
-{
-    transform: scale(1.1);
-}
+
+
 .movement
 {
     position: absolute;
@@ -338,40 +325,51 @@
     background: linear-gradient(88deg,#0f1014 0.62%,rgba(15,16,20,0) 99.33%);
     /* margin-left: 20px; */
 }
+.movies
+{
+    position: relative;
+    /* overflow: hidden; */
+    padding-top: 10px;    
+    /* display: flex; */
+    /* background-color: red; */
+}
 .slider
 {
     margin-left: 15px;
-    width: 140%;
+    /* width: 140%; */
     /* background-color: purple; */
     display: flex;
     column-gap: 10px;
     transition: .7s;
+    width: fit-content;
 
 }
 .movie
 {
-    width: 8.8%;
+    /* width: 8.8%; */
     position: relative;
     margin: 3px;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: pointer;
     transition: .2s;
-    height: fit-content;
+    
     /* background-color: red; */
+}
+.movie:hover
+{
+    transform: scale(1.1);
 }
 .movie-img
 {
     border-radius: 10px;
-    /* height: 230.703px; */
-    height: 100%;
-    width: 100%;
+    width: 160px;
 
 }
 .movie-div
 {
     position: absolute;
     /* height: 140%; */
-    width: 110%;
+    /* width: 110%; */
     display: flex;
     align-items: flex-end;
     border-radius: 10px;
@@ -418,24 +416,21 @@
 }
 .sport
 {
-    /* width: 100%; */
     color: white;
     position: relative;
     overflow: hidden;
     transition: .3s;
     margin-left: 5px;
-
+    /* background-color: yellow; */
+    /* width: 30%; */
 }
 
 .sports-slider
 {
-    /* height: 100%; */
-    width: 150%;
     margin-left: 20px;
-    /* background-color: red; */
-    display: flex;
-    justify-content: space-around;
     transition: .7s;
+    /* width: 200%; */
+    background-color: purple;
 }
 .sports
 {
@@ -445,6 +440,7 @@
 .sport-img-div
 {
     position: relative;
+    /* width: 100%; */
     /* height: 100%; */
     /* background-color: green; */
     display: flex;
@@ -454,9 +450,8 @@
 
 .sport-img
 {
-    width: 95%;
+    width: 250px;
     border-radius: 10px;
-    height: 95%;
     cursor: pointer;
 
 }

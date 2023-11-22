@@ -1,3 +1,4 @@
+// var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 document.addEventListener("DOMContentLoaded", function (){   
     function handleButtonClick(button, direction) {
     button.onclick = function () {
@@ -9,12 +10,13 @@ document.addEventListener("DOMContentLoaded", function (){
     
         if (direction === "back" && slider_width > 1231) {
             targetSlider.style.marginLeft = `15px`;
-        } else if (slider_width > 1231) {
-            let excess = slider_width - 1300;
+        } else {
+            
+            let excess = slider_width - 1231   ;
+            console.log(excess)
             targetSlider.style.marginLeft = `-${excess}px`;
         }
     
-        console.log(direction);
         }
     };
     }
