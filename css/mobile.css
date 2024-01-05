@@ -10,32 +10,49 @@
         margin-top: 100px;
         /* align-self: center; */
     }
-    .banner-info
-    {
-        width: 90%;
-        height: 50%;
-        justify-content: center;
-    }
     .banner-img
     {
-        width: 100%;
-        height: 50%;
+        display: none;
+    }
+    .banner
+    {
+        height: 45vh;
+        background-image: url("../images/banner.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    .overlay-2
+    {
+        background: linear-gradient(to top,#16181fed 10%, transparent, transparent );
 
+    }
+    .banner-info
+    {
+        width: 100%;
+        justify-content: center;
+        row-gap: 15px;
     }
     .content
     {
         margin-top: 45vh;
     }
+    .home
+    {
+        height: 45vh;
+    }
     .banner-info{
-        height: 50%;
         align-items: flex-start;
-        margin-top: 60px;
-        padding: 20px;
+        justify-content: flex-end;
+        padding: 30px 20px;
+        opacity: .9;
+        /* background-color: #0f1014; */
     }
     .buttons
     {
         width: 50%;
-        align-self: center;
+        /* margin-left: 20px; */
     }
     .movement
     {
@@ -48,6 +65,14 @@
         flex-wrap: wrap;
         height: 100px;
     }
+    .movies, .sports
+    {
+        overflow-x: scroll;
+    }
+    .movement
+    {
+        display: none;
+    }
     .movie-img
     {
         width: 180px;
@@ -55,9 +80,5 @@
     .sport-img
     {
         width: 350px;
-    }
-    .sports>.movement
-    {
-        margin-left: 8px;
     }
 }
