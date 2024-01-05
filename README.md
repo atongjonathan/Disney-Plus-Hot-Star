@@ -18,7 +18,7 @@ Please note that this website is for educational purposes only and is intended t
 
 ## Screenshots
 
-![Website Screenshot](https://graph.org/Disney-Capture-01-05)
+![Website Screenshot](./images/screencapture.png)
 
 ## Disclaimer
 
