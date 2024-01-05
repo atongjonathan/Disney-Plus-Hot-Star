@@ -379,11 +379,11 @@
 }
 .number
 {
-    font-size: 110px;
+    font-size: 90px;
     color: #f7f1f1;
     margin: 9px 0;
     align-self: flex-end;
-    opacity: .9;
+    opacity: .8;
     /* background-color: #757ea1; */
     /* opacity: .5; */
 }
