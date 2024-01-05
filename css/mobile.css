@@ -10,6 +10,7 @@
     {
         width: 100%;
         margin-top: 100px;
+        padding: 3px;
 
         /* align-self: center; */
     }
@@ -50,12 +51,17 @@
         justify-content: flex-end;
         padding: 30px 20px;
         opacity: .9;
+        font-size: 15px;
         /* background-color: #0f1014; */
     }
     .buttons
     {
         width: 50%;
-        /* margin-left: 20px; */
+        padding: 10px 20px;
+    }
+    .watch-btn, .plus-btn
+    {
+        padding: 0 15px;
     }
     .movement
     {
