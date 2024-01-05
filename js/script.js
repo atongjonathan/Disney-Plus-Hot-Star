@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function (){
                 else if (current_margin > 0 && count <4){
                     targetSlider.style.marginLeft = `-${width-83+current_margin}px`;
                     count = count+1
-                    console.log("Has been clicked", current_margin, count);
+                    // console.log("Has been clicked", current_margin, count);
                 }
                 else{
                     console.log(count)
