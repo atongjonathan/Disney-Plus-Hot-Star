@@ -3,11 +3,14 @@
     .navigation
     {
         width: 10%;
+        padding: 0;
+        overflow: hidden;
     }
     .logo-img
     {
-        width: 35px;
+        width: 100%;
         margin-top: 100px;
+
         /* align-self: center; */
     }
     .banner-img
